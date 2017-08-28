@@ -6,6 +6,7 @@
       width: 100vw;
       height: 100vh;
       text-align: center;
+      overflow: hidden;
     }
     .info{
         display: block;
@@ -27,6 +28,7 @@
       text-align: center;
       font-size: 1em;
       padding-top: 80vh;
+      padding: 15px;
     }
     .bar{
         position: absolute;
