@@ -1,0 +1,279 @@
+.logo {
+    padding: 15px 0 0 15px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #1d1d1d;
+    position: relative;
+    z-index: 3;
+}
+
+/* BURGER MENU */
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger {
+  padding: 17px;
+  background: #2e2d2d;
+  border-radius: 0;
+  right: 20px;
+  top: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  -ms-transform: translateY(7px) rotate(45deg);
+  -o-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger.active .line:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+  -ms-transform: translateY(-7px) rotate(-45deg);
+  -o-transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE MENU */
+.menuContainer {
+  position: absolute;
+  overflow-x: hidden;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #272727;
+  min-height: 100vh;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuContainer.active {
+  width: 250px;
+  opacity: 1;
+}
+
+.divGray {
+  float: right;
+  padding: 30px 0 0 0;
+}
+
+.divGray div {
+  float: right;
+  margin: 0 15px 0 0;
+  width: 30px;
+  height: 2px;
+  background: gray;
+}
+
+/*BRACKETS*/
+.brackets {
+  padding-top: 80px;
+}
+
+.brackets div {
+  text-align: right;
+  padding: 15px 15px 15px 15px;
+  outline: none;
+}
+
+.brackets div a {
+    padding: 15px 0 0 0;
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.brackets div a:hover,
+.brackets div a:active,
+.brackets div a:focus {
+    text-decoration: none;
+    color: #fac413;
+    cursor: pointer;
+}
+
+/* Brackets go out */
+
+.brackets div a:before,
+.brackets div a:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.brackets div a:before{
+    color: #fac413;
+    content: '[';
+    left: -15px;
+    top: 5px;
+    transform: translateX(10px);
+}
+
+.brackets div a:after{
+    color: #fac413;
+    content: ']';
+    right: -15px;
+    top: 5px;
+    transform: translateX(-10px);
+}
+
+.brackets div a:hover:before,
+.brackets div a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.list .brackets div{
+    display: inline;
+    padding: 15px 30px 15px 30px;
+}
+
+.list .brackets{
+    padding-top: 12px;
+}
+
+/* TOP UI */
+
+.list{
+    display: none;
+}
+
+.topUI{
+    padding-top: 25px;
+}
+
+.topUI div{
+    display: inline;
+    padding: 15px 70px 15px 45px;
+}
+
+.topUI div a {
+    color: #7a7a7a;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.topUI div a:hover{
+    color: #959393;
+}
+
+/* SOCIAL */
+
+.btn-msg{
+    position: absolute;
+    right: 0;
+    margin: 30px 15px 0 0;
+}
+
+.soc svg g path{
+    fill: #fff;
+}
+
+.soc svg{
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+
+.soc:hover svg g path{
+    fill: #fac413;
+}
+
+div.social{
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+
+div.social > div {
+    padding-bottom: 3px;
+}
+
+div.social > div ul li {
+    position: relative;
+    left: 2px;
+    display: inline;
+    border: 1px solid #3e3e3f;
+    padding: 7px;
+    cursor: pointer;
+}
+
+div.social > div ul li:nth-child(4){
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .list{
+        display: block;
+    }
+    .navWrapper{
+        background: transparent;
+        justify-content: flex-start;
+    }
+    .burger{
+        display: none;
+    }
+    .logo{
+        padding: 3.5em 10em 0 5em;
+        height: 50px;
+    }
+    .list .brackets div{
+        padding: 15px 45px 15px 45px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .logo{
+        padding: 3.5em 20em 0 5em;
+    }
+    .list .brackets div{
+        padding: 15px 85px 15px 45px;
+    }
+    .topUI div{
+        padding: 15px 110px 15px 45px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .logo{
+        padding: 4.4em 25em 0 5em;
+        height: 70px;
+    }
+    .list .brackets div{
+        padding: 15px 125px 15px 45px;
+    }
+    .topUI div{
+        padding: 15px 140px 15px 45px;
+    }
+    .list .brackets{
+        padding-top: 27px;
+    }
+}

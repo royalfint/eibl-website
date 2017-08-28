@@ -1,0 +1,25 @@
+<section class="abs">
+    <app-header></app-header>
+</section>
+<div id="home">
+  <div class="text" [@animLeftBlock]="animLeftBlock">
+    <h1>Строительная</h1>
+    <h2>Компания</h2>
+    <div class="extra">
+        <div class="gray"></div>
+        <div class="slogan">
+            <p>With no limits..</p>
+        </div>
+    </div>
+    <button class="btn btn-more">Подробнее</button>
+  </div>
+  <div class="slider" [style.background-image]="'url(' + currentSlide + ')'">
+      <div class="controlsWrap">
+        <ul class="controls" [@animBottomBlock]="animBottomBlock">
+            <li *ngFor="let control of pages; let i = index" [ngClass]="{'active': i == pageNumber}" (click)="onPageChange(i)">
+                0{{ i+1 }}
+            </li>
+        </ul>
+      </div>
+  </div>
+</div>

@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,900&subset=cyrillic');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html{
+  -webkit-tap-highlight-color: transparent;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+    font-size: 0.625em;
+    border: 1px solid #fac413;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: #fac413;
+    color: #222;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
