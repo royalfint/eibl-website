@@ -1,6 +1,6 @@
 <div class="navWrapper">
   <div class="item">
-    <img src="../assets/img/logo.svg" class="logo" alt="">
+    <img src="../assets/img/logo.svg" class="logo" routerLink="/" alt="">
   </div>
   <div class="item">
     <div class="burger" [ngClass]="{'active': openMenu }" (click)="openMenu = !openMenu">
@@ -16,11 +16,11 @@
         <div><a>ПОИСК</a></div>
       </div>
       <div class="brackets">
-        <div><a>ГЛАВНАЯ</a></div>
+        <div><a routerLink="/">ГЛАВНАЯ</a></div>
         <div><a>О НАС</a></div>
         <div><a>РАБОТЫ</a></div>
         <div><a>ИНВЕСТОРАМ</a></div>
-        <div><a>КОНТАКТЫ</a></div>
+        <div><a routerLink="/contacts">КОНТАКТЫ</a></div>
       </div>
     </div>
   </div>
@@ -29,11 +29,11 @@
 <div class="menuContainer" [ngClass]="{'active': openMenu }">
   <div class="item">
     <div class="brackets">
-      <div><a>ГЛАВНАЯ</a></div>
+      <div><a routerLink="/">ГЛАВНАЯ</a></div>
       <div><a>О НАС</a></div>
       <div><a>РАБОТЫ</a></div>
       <div><a>ИНВЕСТОРАМ</a></div>
-      <div><a>КОНТАКТЫ</a></div>
+      <div><a routerLink="/contacts">КОНТАКТЫ</a></div>
     </div>
     <div class="divGray">
       <div></div>

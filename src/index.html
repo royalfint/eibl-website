@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-        body{
+    body{
       background: #222;
        text-align: center;
+       overflow: hidden;
     }
     .loading{
       width: 100vw;
@@ -47,18 +48,18 @@
         height: 100vh;
         background: #fac413;
         width: 12px;
-        -webkit-animation: mymove 3s forwards; /* Safari 4.0 - 8.0 */
-        animation: mymove 3s forwards;
+        -webkit-animation: mymove 1.5s forwards; /* Safari 4.0 - 8.0 */
+        animation: mymove 1.5s forwards;
     }
 
     @-webkit-keyframes mymove {
-        from {height: 0;}
+        from {height: 10vh;}
         to {height: 100vh;}
     } 
 
     /* Standard syntax */ 
     @keyframes mymove {
-        from {height: 0px;}
+        from {height: 10vh;}
         to {height: 100vh;}
     }
 </style>

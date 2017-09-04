@@ -25,6 +25,10 @@
   height: 100%;
 }
 
+.slogan{
+    text-align: right;
+}
+
 .extra{
     height: 100px;
     display: flex;
@@ -47,11 +51,6 @@ p{
 
 .text{
     text-align: center;
-}
-
-.abs {
-    position: absolute;
-    width: 100%;
 }
 
 h1 {
@@ -115,6 +114,9 @@ ul li:hover, ul li.active{
         background: #222;
     }
     .text{
+        text-align: left;
+    }
+    .slogan{
         text-align: left;
     }
     .slider {

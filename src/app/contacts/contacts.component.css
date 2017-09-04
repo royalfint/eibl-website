@@ -1,0 +1,132 @@
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0 25px 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h4{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+
+.text{
+    padding: 0 25px 0 25px;
+}
+
+.gray{
+    padding: 30px 0;
+}
+
+p{
+    color: #fff;
+    text-align: left;
+    line-height: 0.5em;
+    font-size: 1em;
+}
+
+.gray > div{
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+.map{
+    flex-grow: 2;
+    min-width: 270px;
+    padding: 25px;
+}
+
+.map > div > iframe {
+    min-height: 350px;
+}
+
+.form{
+    background: #fff;
+}
+
+.btn-msg{
+    color: #000;
+    margin-top: 40px;
+    max-width: 180px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 25px 45px 40px;
+}
+
+#dis:disabled:hover {
+    background: transparent;
+}
+
+input{
+    width: 100%;
+    max-width: 650px;
+    margin-top: 15px;
+    color: #727272;
+    height: 30px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    outline: none;
+    border-color: transparent;
+    border-bottom: 2px solid #727272; 
+}
+
+input.ng-invalid.ng-touched {
+    outline: none;
+    border-color: transparent;
+    border-bottom: 2px solid red;
+}
+
+/* media */
+@media only screen and (min-width: 640px) {
+    .map{
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .text{
+        padding: 70px 50px 0 50px;
+    }
+    .map div iframe{
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .text{
+        padding: 130px 50px 0 100px;
+    }
+    .map{
+        padding-top: 80px;
+    }
+    .map div iframe{
+        height: 550px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .text{
+        padding: 305px 150px 0 100px;
+    }
+    .map{
+        padding-top: 130px;
+    }
+    .map div iframe{
+        height: 700px;
+    }
+}

@@ -1,0 +1,34 @@
+<section class="abs">
+    <app-header></app-header>
+</section>
+<div id="contacts">
+    <div class="text">
+        <h1>Контакты</h1>
+        <div class="gray">
+            <div></div>
+        </div>
+        <p>г.Астана пер.Ташенова 1</p>
+        <p>тел. +7 775 398 92 45</p>
+        <p>тел. +7172 345 456</p>
+        <p>info@eibl.com</p>
+        <div class="gray">
+            <div></div>
+        </div>
+    </div>
+    <div class="map">
+        <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+          <iframe width="100%"  frameborder="0" style="border:0; background: lightgray; " src="https://www.google.com/maps/embed/v1/place?q=%D0%9E%D1%84%D0%B8%D1%81%20%D0%A2%D0%9E%D0%9E%20%5B'eibl%5D&amp;key=AIzaSyCHNAcwgdvMAfihTUxw2pJLZAzr59AAOtw" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="form">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <h4>Связаться с нами</h4>
+        <input type="text" placeholder="ВАШЕ ИМЯ" ngModel name="firstname" required>
+        <input type="text" placeholder="ВАШ ТЕЛЕФОН" ngModel name="phone" required>
+        <button type="submit" class="btn btn-msg" id="dis" [disabled]="!form.valid">Отправить</button>
+    </form>
+</div>
+
+<app-footer></app-footer>
