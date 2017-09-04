@@ -13,7 +13,7 @@ export class ContactsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     console.log("Submitted!");
   }
 }
