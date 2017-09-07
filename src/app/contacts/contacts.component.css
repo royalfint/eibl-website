@@ -121,6 +121,9 @@ input.ng-invalid.ng-touched {
     .map div iframe{
         height: 550px;
     }
+    #contacts{
+        padding-bottom: 60px;
+    }
 }
 
 @media only screen and (min-width: 1920px) {

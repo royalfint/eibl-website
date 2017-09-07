@@ -9,9 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
+import { HeaderDarkComponent } from './header-dark/header-dark.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'portfolio', component: PortfolioComponent},
+  { path: 'about', component: AboutComponent},
   { path: "contacts", component: ContactsComponent }
 ]
 
@@ -21,7 +26,10 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent,
+    AboutComponent,
+    HeaderDarkComponent
   ],
   imports: [
     BrowserModule,

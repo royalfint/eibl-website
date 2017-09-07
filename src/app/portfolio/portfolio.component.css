@@ -1,0 +1,248 @@
+#portfolio{
+    display: flex;
+}
+
+.blackBar{
+    padding: 320px 90px 0 100px;
+    background: #222;
+}
+
+.content{
+    padding-top: 165px;
+    background: #fff;
+    width: 100%;
+}
+
+.select{
+    display: flex;
+    justify-content: space-around;
+}
+
+.proj{
+    cursor: pointer;
+    min-width: 200px;
+    padding: 0 25px;
+    border: 1px solid #222;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.inf{
+    display: flex;
+}
+
+.infoBlock{
+    padding-left: 40px;
+    width: 45%;
+}
+
+.infoRight{
+    padding: 170px 20px 20px 20px;
+}
+
+.port{
+    font-size: 3.75em;
+    color: #fac413;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 90px 0 20px 0;
+}
+
+.text{
+    font-size: 1em;
+    color: #222;
+    text-align: left;
+}
+
+.photosGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.photo{
+    width: 48%;
+    height: 203px;
+    padding: 0 0 20px 0;
+}
+
+.photoDouble{
+    width: 100%;
+    height: 380px;
+    padding: 0 0 20px 0;
+}
+
+.photoBig{
+    width: 100%;
+    height: 575px;
+    padding: 0 0 20px 0;
+}
+
+.proj:hover{
+    border-color: #222;
+}
+
+.proj p{
+    font-size: 0.8em;
+    font-weight: 900;
+    color: #222;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.projIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 1px;
+    width: 65px;
+    background: #222;
+}
+
+h1{
+    font-size: 2.75em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1920px) {
+    .photosGrid{
+        padding-top: 0;
+    }
+    .photoDouble{
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .photo{
+        height: 180px;
+    }
+    .photoBig{
+        height: 400px;
+    }
+    .blackBar{
+        padding-right: 50px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .port{
+        font-size: 2.5em;
+    }
+    .infoRight{
+        padding-top: 200px;
+    }
+    .infoBlock{
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .blackBar{
+        padding-left: 15px;
+        padding-top: 270px;
+    }
+    .content{
+        padding-top: 80px;
+    }
+    .infoBlock{
+        padding-left: 25px;
+    }
+    .port{
+        margin-top: 50px;
+    }
+    .infoRight{
+        padding-top: 0px;
+        padding-right: 0;
+    }
+    .photo{
+        height: 180px;
+    }
+    .photoDouble{
+        height: 350px;
+    }
+    .photoBig{
+        height: 380px;
+    }
+    .inf{
+        flex-direction: column;
+        width: 95%;
+    }
+    .infoBlock{
+        width: 99%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 970px) {
+    .select{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .infoBlock{
+        width: 97%;
+    }
+    #ark{
+        position: relative;
+        left: 29px;
+    }
+    #iins{
+        position: relative;
+        left: -8px;
+    }
+    .port{
+        margin-top: 10px;
+    }
+    .blackBar{
+        padding-top: 160px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blackBar{
+        display: none;
+    }
+    .photosGrid{
+        padding-right: 15px;
+    }
+    .port{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .photo{
+        height: 130px;
+    }
+    .photoDouble{
+        height: 250px;
+    }
+    .photoBig{
+        height: 280px;
+    }
+    .port{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .photo{
+        height: 130px;
+    }
+    .proj{
+        width: 150px;
+    }
+    .text{
+        padding-right: 15px;
+    }
+}
