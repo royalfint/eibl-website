@@ -1,0 +1,308 @@
+.darkHero{
+    display: flex;
+    background: #222;
+}
+
+.darkBar{
+    width: 830px;
+    flex-grow: 1;
+}
+
+.darkImage{
+    flex-grow: 2;
+}
+
+.imgItself{
+    height: 800px;
+    background: url('../../assets/img/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 100px;
+    padding-top: 340px;
+    font-size: 2.7em;
+    position: absolute;
+}
+
+.about{
+    color: #fff;
+    padding: 80px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.about span{
+    color: #fac413;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+      background: #fff;
+}
+
+#group1 {
+  height: 1140px;
+  position: relative;
+  transform-style: preserve-3d;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#group2 {
+  height: 1500px;
+  position: relative;
+  transform-style: preserve-3d;
+  font-size: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#group3 {
+  height: 1300px;
+  position: relative;
+  transform-style: preserve-3d;
+  font-size: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.textBox{
+    position: absolute;
+    top: 200px;
+    padding-right: 400px;
+}
+
+.textBox2{
+    position: absolute;
+    top: 200px;
+    padding-left: 400px;
+}
+
+.textItself{
+    max-width: 605px;
+    background: #222222;
+    padding: 55px 50px 65px 50px;
+}
+
+.textItself2{
+    max-width: 505px;
+    background: #222222;
+    padding: 55px 50px 65px 50px;
+    z-index: 7;
+}
+
+.textItself p,
+.textItself2 p{
+    text-align: left;
+    color: #fff;
+}
+
+.caption{
+    transform: translateZ(-1px);
+    position: absolute;
+    top: -1100px;
+    left: 0;
+    height: 200px;
+    align-self: flex-start;
+}
+
+.backText{
+    height: 500px;
+    background: url('../../assets/back/home.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crtTetxt{
+    text-align: left;
+}
+
+.backLogo{
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+h3{
+    color: #e8e8e8;
+    font-size: 12.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h4{
+    color: #fac413;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+}
+
+.extraText{
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+    top: 500px;
+    left: 500px;
+}
+
+.projs{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.statHead{
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 1150px;
+    font-size: 9.5em;
+}
+
+.sertHead{
+    margin: 0;
+    padding: 80px 0;
+    font-size: 9.5em;
+    position: absolute;
+    left: 250px;
+}
+
+.projDesc{
+    max-width: 500px;
+    padding: 0 50px;
+}
+
+.projDesc p{
+    text-align: left;
+    margin: 0;
+}
+
+.title{
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    color: #222;
+    font-weight: 900;
+}
+
+.strat{
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    flex-direction: column;
+}
+
+.stratText{
+    max-width: 1150px;
+    text-align: left;
+}
+
+.extraText2{
+    max-width: 600px;
+    text-align: left;
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+.photo {
+  transform: translateZ(-1px);
+  height: 500px;
+  position: absolute;
+  padding-left: 400px;
+  top:300px;
+   z-index: 2;
+}
+
+.photo2 {
+  transform: translateZ(-1px);
+  height: 500px;
+  position: absolute;
+  padding-right: 600px;
+  top:300px;
+  z-index: 2;
+}
+
+.photoItself{
+    width: 750px;
+    height: 850px;
+    background: url('../../assets/back/home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.photoBlock{
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 1rem;
+  padding-bottom: 100px;
+}
+
+.seertBlock{
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 1rem;
+  padding-bottom: 100px;
+  padding-top: 350px;
+}
+
+.btn-more{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 50px;
+    color: #222;
+}
+
+.cell img {
+  display: block;
+}
+
+.cell {
+  margin: 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}

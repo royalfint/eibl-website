@@ -14,6 +14,8 @@
     z-index: 3;
 }
 
+
+
 /* BURGER MENU */
 .line {
   width: 30px;
@@ -106,12 +108,8 @@
     text-decoration: none;
     position: relative;
     z-index: 0;
-    color: #222;
-    cursor: pointer;
-}
-
-#mobi div a {
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -181,6 +179,10 @@
     padding: 15px 70px 15px 45px;
 }
 
+.topUI div i {
+    padding-right: 5px;
+}
+
 .topUI div a {
     color: #7a7a7a;
     font-size: 0.7em;
@@ -236,6 +238,10 @@ div.social > div ul li:nth-child(4){
     padding-right: 10px;
 }
 
+#mobi div a {
+    color: #222;
+}
+
 @media only screen and (min-width: 1440px) {
     .list{
         display: block;
@@ -252,7 +258,7 @@ div.social > div ul li:nth-child(4){
         height: 50px;
     }
     .list .brackets div{
-        padding: 15px 74px 15px 74px;
+        padding: 15px 94px 15px 74px;
     }
 }
 
@@ -261,7 +267,7 @@ div.social > div ul li:nth-child(4){
         padding: 3.5em 20em 0 5em;
     }
     .list .brackets div{
-        padding: 15px 101px 15px 100px;
+        padding: 15px 123px 15px 100px;
     }
     .topUI div{
         padding: 15px 110px 15px 45px;
@@ -274,7 +280,7 @@ div.social > div ul li:nth-child(4){
         height: 70px;
     }
     .list .brackets div{
-        padding: 15px 145px 15px 75px;
+        padding: 15px 165px 15px 75px;
     }
     .topUI div{
         padding: 15px 140px 15px 45px;
