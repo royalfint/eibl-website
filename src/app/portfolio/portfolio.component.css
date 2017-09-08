@@ -36,7 +36,7 @@
 
 .infoBlock{
     padding-left: 40px;
-    width: 45%;
+    width: 80%;
 }
 
 .infoRight{
@@ -66,14 +66,14 @@
 }
 
 .photo{
-    width: 48%;
-    height: 203px;
+    width: 49%;
+    height: 253px;
     padding: 0 0 20px 0;
 }
 
 .photoDouble{
     width: 100%;
-    height: 380px;
+    height: 407px;
     padding: 0 0 20px 0;
 }
 
@@ -118,7 +118,11 @@ h1{
         padding-top: 0;
     }
     .photoDouble{
-        height: 280px;
+        height: 340px;
+    }
+    .photo{
+        width: 48%;
+        height: 210px;
     }
 }
 

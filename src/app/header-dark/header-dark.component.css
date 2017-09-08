@@ -110,6 +110,10 @@
     cursor: pointer;
 }
 
+#mobi div a {
+    color: #fff;
+}
+
 
 .brackets div a:hover,
 .brackets div a:active,
