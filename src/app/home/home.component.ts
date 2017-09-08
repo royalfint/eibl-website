@@ -64,9 +64,9 @@ export class HomeComponent implements OnInit {
   public pageCount : number = 0;
   pages: Array<{img: string}> = [
     { img: "../../assets/back/home.jpg" },
-    { img: "../../assets/back/home2.jpg" },
-    { img: "../../assets/back/home.jpg" },
-    { img: "../../assets/back/home2.jpg" }
+    { img: "../../assets/back/2.jpg" },
+    { img: "../../assets/back/3.jpg" },
+    { img: "../../assets/back/4.jpg" }
   ];
 
   onPageChange(i){

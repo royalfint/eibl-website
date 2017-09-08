@@ -11,7 +11,10 @@
     padding-top: 165px;
     background: #fff;
     width: 100%;
+    padding-bottom: 40px;
 }
+
+
 
 .select{
     display: flex;
@@ -75,6 +78,8 @@
     width: 100%;
     height: 407px;
     padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .photoBig{
@@ -111,6 +116,11 @@ h1{
     font-size: 2.75em;
     text-transform: uppercase;
     color: #fff;
+}
+
+.photosGrid > div{
+    background-size: cover;
+    background-position: center
 }
 
 @media only screen and (max-width: 1920px) {

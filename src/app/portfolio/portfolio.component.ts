@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  img:string[] = ["url('../assets/back/home.jpg')"];
+  img:string[] = ["url('../assets/img/1.jpg')",
+    "url('../assets/img/2.jpg')",
+    "url('../assets/back/dump.jpg')",
+    "url('../assets/img/3.jpg')",
+    "url('../assets/img/4.jpg')",
+    "url('../assets/img/3.jpg')",
+    "url('../assets/img/4.jpg')"
+  ];
 
   constructor() { }
 

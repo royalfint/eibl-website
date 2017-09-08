@@ -129,7 +129,7 @@ div {
 
 .backText{
     height: 500px;
-    background: url('../../assets/back/home.jpg');
+    background: url('../../assets/img/backText.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -250,7 +250,15 @@ h4{
 .photoItself{
     width: 750px;
     height: 850px;
-    background: url('../../assets/back/home.jpg');
+    background: url('../../assets/img/man.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.photoItself2{
+    width: 750px;
+    height: 850px;
+    background: url('../../assets/img/counter.jpg');
     background-size: cover;
     background-position: center;
 }
