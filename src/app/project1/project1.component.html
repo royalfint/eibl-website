@@ -1,0 +1,24 @@
+<section class="abs">
+  <app-header></app-header>
+</section>
+
+<div class="content">
+  <div class="slider">
+    <div class="mainFrame" [style.background-image]="'url(' + img[0] + ')'" >
+      <div class="controls">
+        <div class="switches">
+          <div class="switch active"><p>01</p></div>
+          <div class="switch"><p>02</p></div>
+          <div class="switch"><p>03</p></div>
+          <div class="switch"><p>04</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnails">
+      <div class="thumb" *ngFor="let thumb of pages; let i = index; let last = last" [style.backgroundImage]="'url(' + thumb.img + ')'" [ngClass]="{'lastThumb': last }"></div>
+    </div>
+  </div>
+  <div class="desc">
+    
+  </div>
+</div>

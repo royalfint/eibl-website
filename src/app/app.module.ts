@@ -12,12 +12,16 @@ import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderDarkComponent } from './header-dark/header-dark.component';
+import { Project1Component } from './project1/project1.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'about', component: AboutComponent},
-  { path: "contacts", component: ContactsComponent }
+  { path: "contacts", component: ContactsComponent },
+  { path: 'kuryk', component: Project1Component},
+  { path: 'arkalyk', component: Project1Component},
+  { path: 'iins', component: Project1Component}
 ]
 
 @NgModule({
@@ -29,7 +33,8 @@ const appRoutes: Routes = [
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    HeaderDarkComponent
+    HeaderDarkComponent,
+    Project1Component
   ],
   imports: [
     BrowserModule,
