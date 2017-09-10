@@ -385,7 +385,7 @@ h4{
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
     .darkBar{
         width: 0px;
     }
