@@ -360,7 +360,7 @@ h4{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .about{
         padding: 30px 30px 30px 0;
     }
@@ -385,7 +385,7 @@ h4{
     }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 650px) {
     .darkBar{
         width: 0px;
     }
