@@ -8,12 +8,14 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactsComponent implements OnInit {
   @ViewChild('form') callbackForm: NgForm;
+  success = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    console.log("Submitted!");
+    this.success = true;
   }
 }

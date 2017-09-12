@@ -4,18 +4,15 @@
 
 <div class="content">
   <div class="slider">
-    <div class="mainFrame" [style.background-image]="'url(' + img[0] + ')'" >
+    <div class="mainFrame" [style.background-image]="'url(' + currentImg + ')'" >
       <div class="controls">
         <div class="switches">
-          <div class="switch active"><p>01</p></div>
-          <div class="switch"><p>02</p></div>
-          <div class="switch"><p>03</p></div>
-          <div class="switch"><p>04</p></div>
+          <div class="switch" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [ngClass]="{'active': currentPage == i }"><p>0{{i+1}}</p></div>
         </div>
       </div>
     </div>
     <div class="thumbnails">
-      <div class="thumb" *ngFor="let thumb of pages; let i = index; let last = last" [style.backgroundImage]="'url(' + thumb.img + ')'" [ngClass]="{'lastThumb': last }"></div>
+      <div class="thumb" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [style.backgroundImage]="'url(' + thumb.img + ')'" [ngClass]="{'lastThumb': last }"></div>
     </div>
   </div>
   <div class="desc">
@@ -32,7 +29,7 @@
       <p class="text">
         Порт «Курык» - это не просто паромный комплекс, это долгожданный проект, очень нужный для развития и модернизации, как отметил президент Нурсултан Назарбаев. Это важное звено транспортно-логистической системы Транскаспийского международного коридора. Это выход на Кавказ и в Европу. Проектная мощность комплекса составляет 5,1 миллионов тонн грузов в год. Комплекс ориентирован на перевалку зерна, нефтепродуктов, удобрений, химикатов и других грузов в сопредельные государства Каспийского региона.
       </p>
-      <button class="btn btn-next">Перейти к следующему проекту <i class="fa fa-angle-right fafa" aria-hidden="true"></i></button>
+      <button routerLink="/arkalyk" class="btn btn-next">Перейти к следующему проекту <i class="fa fa-angle-right fafa" aria-hidden="true"></i></button>
     </div>
     <div class="item">
       <div class="close">

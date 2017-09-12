@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project1',
-  templateUrl: './project1.component.html',
-  styleUrls: ['./project1.component.css']
+  selector: 'app-project2',
+  templateUrl: './project2.component.html',
+  styleUrls: ['./project2.component.css']
 })
-export class Project1Component implements OnInit {
+export class Project2Component implements OnInit {
   img: string[] = ["../../assets/img/rails.jpg"];
   currentPage = 0;
   currentImg = "";
@@ -32,5 +32,4 @@ export class Project1Component implements OnInit {
     this.currentImg = this.pages[i].img;
     this.currentPage = i;
   }
-
 }

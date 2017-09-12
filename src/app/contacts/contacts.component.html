@@ -28,6 +28,7 @@
         <input type="text" placeholder="ВАШЕ ИМЯ" ngModel name="firstname" required>
         <input type="text" placeholder="ВАШ ТЕЛЕФОН" ngModel name="phone" required>
         <button type="submit" class="btn btn-msg" id="dis" [disabled]="!form.valid">Отправить</button>
+        <p class="afterMsg" *ngIf="success">Спасибо за заявку! Ожидайте ответ</p>
     </form>
 </div>
 

@@ -1,0 +1,45 @@
+<section class="abs">
+  <app-header></app-header>
+</section>
+
+<div class="content">
+  <div class="slider">
+    <div class="mainFrame" [style.background-image]="'url(' + currentImg + ')'" >
+      <div class="controls">
+        <div class="switches">
+          <div class="switch" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [ngClass]="{'active': currentPage == i }"><p>0{{i+1}}</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnails">
+      <div class="thumb" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [style.backgroundImage]="'url(' + thumb.img + ')'" [ngClass]="{'lastThumb': last }"></div>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="item" id="tt">
+      <h1>ИИНС</h1>
+      <h2></h2>
+      <p></p>
+      <p></p>
+      <p class="title">Описание проекта</p>
+      <div class="div"></div>
+      <p class="text">
+С момента зарождения идеи и до ее реализации прошло более пяти лет. Медиаборд, не имеющий аналогов в мире и обеспечивающий высокоэффективную систему отображения информации. Он является главным элементом Интеллектуальной Медиаплатформы, имеющей единый центр управления. В зависимости от разных категорий дорог, медиаборды, по своему функционалу, подразделяются на три основные категории: магистральный, дорожный и уличный. Они позволят управлять маршрутным ориентированием в городе, будут предоставлять информацию о категории пробок и своевременно предупреждать участников дорожного движения о
+
+критических участках дороги, что значительно повысит безопасность движения      </p>
+      <button routerLink="/kuryk" class="btn btn-next">Перейти к следующему проекту <i class="fa fa-angle-right fafa" aria-hidden="true"></i></button>
+    </div>
+    <div class="item">
+      <div class="close">
+          <img routerLink="/portfolio" src="../assets/img/cancel.svg" class="cancel">
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<p class="extra">До конца 2017 года сеть расширится до 150 конструкций. Всего на разработку проекта было затрачено более 1 млн. долларов, а себестоимость одного медиаборда составляет 120 тыс. долларов.</p>
+
+<div>
+  <app-footer></app-footer>
+</div>

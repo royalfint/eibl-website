@@ -13,6 +13,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderDarkComponent } from './header-dark/header-dark.component';
 import { Project1Component } from './project1/project1.component';
+import { Project2Component } from './project2/project2.component';
+import { Project3Component } from './project3/project3.component';
+import { CallbackComponent } from './callback/callback.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,8 +23,8 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: "contacts", component: ContactsComponent },
   { path: 'kuryk', component: Project1Component},
-  { path: 'arkalyk', component: Project1Component},
-  { path: 'iins', component: Project1Component}
+  { path: 'arkalyk', component: Project2Component},
+  { path: 'iins', component: Project3Component}
 ]
 
 @NgModule({
@@ -34,7 +37,10 @@ const appRoutes: Routes = [
     PortfolioComponent,
     AboutComponent,
     HeaderDarkComponent,
-    Project1Component
+    Project1Component,
+    Project2Component,
+    Project3Component,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,

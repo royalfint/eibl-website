@@ -10,9 +10,9 @@
     </div>
     <div class="list">
       <div class="topUI">
-        <div><a><i class="fa fa-phone" aria-hidden="true"></i> +7 775 399 90 22</a></div>
-        <div><a><i class="fa fa-envelope" aria-hidden="true"></i> НАПИШИТЕ НАМ</a></div>
-        <div><a><i class="fa fa-bell" aria-hidden="true"></i> ОБРАТНЫЙ ЗВОНОК</a></div>
+        <div><a (click)="onCallback()"><i class="fa fa-phone" aria-hidden="true"></i> +7 775 399 90 22</a></div>
+        <div><a (click)="onCallback()"><i class="fa fa-envelope" aria-hidden="true"></i> НАПИШИТЕ НАМ</a></div>
+        <div><a (click)="onCallback()"><i class="fa fa-bell" aria-hidden="true"></i> ОБРАТНЫЙ ЗВОНОК</a></div>
         <div><a><i class="fa fa-search" aria-hidden="true"></i> ПОИСК</a></div>
       </div>
       <div class="brackets" id="mobi">
@@ -23,6 +23,20 @@
         <div><a routerLink="/contacts">КОНТАКТЫ</a></div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="callback" *ngIf="callback">
+  <div class="wrapForm">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <img (click)="onClose()" src="../assets/img/cancel.svg" class="cancel">
+        <h4>Связаться с нами</h4>
+        <input type="text" placeholder="ВАШЕ ИМЯ" ngModel name="firstname" required>
+        <input type="text" placeholder="ТЕЛЕФОН" ngModel name="phone" required>
+        <input type="text" placeholder="EMAIL" ngModel name="email" required>
+        <input type="text" placeholder="СООБЩЕНИЕ" ngModel name="message" required>
+        <button type="submit" class="btn btn-msgg" id="dis" [disabled]="!form.valid">Отправить</button>
+    </form>
   </div>
 </div>
 

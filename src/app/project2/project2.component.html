@@ -1,0 +1,44 @@
+<section class="abs">
+  <app-header></app-header>
+</section>
+
+<div class="content">
+  <div class="slider">
+    <div class="mainFrame" [style.background-image]="'url(' + currentImg + ')'" >
+      <div class="controls">
+        <div class="switches">
+          <div class="switch" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [ngClass]="{'active': currentPage == i }"><p>0{{i+1}}</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnails">
+      <div class="thumb" (click)="switch(i)" *ngFor="let thumb of pages; let i = index; let last = last" [style.backgroundImage]="'url(' + thumb.img + ')'" [ngClass]="{'lastThumb': last }"></div>
+    </div>
+  </div>
+  <div class="desc">
+    <div class="item" id="tt">
+      <h1>ж/д линия<br>Аркалык-Шубарколь</h1>
+      <h2>214 км</h2>
+      <p>Протяженность железнодорожной линии</p>
+      <h2>2 года</h2>
+      <p>Период реализации проекта</p>
+      <h2></h2>
+      <p></p>
+      <p class="title">Описание проекта</p>
+      <div class="div"></div>
+      <p class="text">
+Создавать часть транзитного коридора из Китая в Европу, соединив железной дорогой никогда ранее не сообщавшиеся ею пункты, начали в июле 2012 года. Ветку открыли в 2014 году. Она проходит по территории двух областей – Карагандинской и Костанайской. Новая железнодорожная линия позволила сэкономить на перевозках примерно 2 суток и транспортные расходы в среднем на 35%. В месяц со станции отправляется 5545 вагонов, это 4 млн. тонн. Все в сторону Аркалыка, с выходом по СНГ, часто в Россию, Финляндию. Дорога вдохнула энергию в индустриальное развитие региона.      </p>
+      <button routerLink="/iins" class="btn btn-next">Перейти к следующему проекту <i class="fa fa-angle-right fafa" aria-hidden="true"></i></button>
+    </div>
+    <div class="item">
+      <div class="close">
+          <img routerLink="/portfolio" src="../assets/img/cancel.svg" class="cancel">
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<div>
+  <app-footer></app-footer>
+</div>
