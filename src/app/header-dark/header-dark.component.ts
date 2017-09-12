@@ -6,11 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-dark.component.css']
 })
 export class HeaderDarkComponent implements OnInit {
-   openMenu = false;
-   
+    openMenu = false;
+  success = false;
+  callback = false;
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onCallback(){
+    this.callback = !this.callback;
+  }
+
+  onSubmit(){
+    this.success = true;
+    this.callback = false;
+  }
+
+  onClose(){
+    this.callback = false;
   }
 
 }
