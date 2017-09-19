@@ -15,6 +15,7 @@ import { AboutnewComponent } from './aboutnew/aboutnew.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   /*{ path: 'portfolio', loadChildren: 'portfolio/portfolio.module#LazyModule'},*/
+  { path: 'portfolio', component: PortfolioComponent },
   { path: 'about', component: AboutComponent},
   { path: "contacts", component: ContactsComponent },
   { path: 'kuryk', component: Project1Component},

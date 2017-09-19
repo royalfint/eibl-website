@@ -207,6 +207,28 @@ h4{
     text-align: left;
 }
 
+.aboutMob{
+    display: none;
+    background: #222;
+    margin: 0;
+    padding: 30px;
+    position: relative;
+    top: -1px;
+    text-align: left;
+}
+
+.aboutMob p{
+    color: #cecece;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.eiblBig{
+    text-align: center;
+    font-size: 1.8em;
+    color: #fac413;
+    font-weight: 900;
+}
 
 .projs{
     display: flex;
@@ -264,7 +286,7 @@ h4{
   margin: 0 auto;
   max-width: 1500px;
   padding: 0 1rem;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 .seertBlock{
@@ -335,6 +357,15 @@ h4{
     .extra{
         padding-left: 100px;
     }
+    #group2{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    #group2{
+        margin-top: 200px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -352,8 +383,11 @@ h4{
         padding-left: 30px;
     }
     #group2{
-        top: 200px;
+        top: 100px;
         height: 1500px;
+    }
+    .statHead{
+        padding-right: 0px;
     }
 }
 
@@ -376,6 +410,7 @@ h4{
     }
     #group2{
         justify-content: center;
+        margin-top: 100px;
     }
     #group3{
         height: 1350px;
@@ -389,13 +424,20 @@ h4{
 }
 
 @media screen and (max-width: 650px) {
-    .darkBar{
-        width: 0px;
+    .about{
+       opacity: 0;
+    }
+    .darkHero{
+        height: 500px;
+    }
+    .aboutMob{
+        display: block;
     }
     .imgItself{
         height: 500px;
     }
     .darkBar h1{
+         padding-top: 200px;
         padding-left: 20px;
         font-size: 2em;
     }
@@ -410,6 +452,29 @@ h4{
     }
     .projDesc{
         padding: 15px;
+    }
+    #group2{
+        margin-top: 0px;
+        top: 0px;
+        height: 1350px;
+    }
+    #group3{
+        height: 1250px;
+    }
+    .sertHead, .statHead{
+        font-size: 7em;
+        padding-right: 0;
+    }
+    .capTit{
+        font-size: 7em;
+        position: relative;
+        top: 50px;
+    }
+    .extra p{
+        padding-top: 20px;
+    }
+    .sertHead{
+        padding-top: 70px;
     }
 }
 

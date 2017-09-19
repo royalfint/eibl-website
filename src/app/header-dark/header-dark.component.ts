@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header-dark',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-dark.component.css']
 })
 export class HeaderDarkComponent implements OnInit {
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event){
+    console.log($event);
+    console.log("scrolling");
+  } 
+
     openMenu = false;
   success = false;
   callback = false;
